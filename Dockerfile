@@ -14,6 +14,8 @@ COPY package*.json .
 # install app dependencies
 RUN npm i
 
+EXPOSE 3001
+
 # start the app
 CMD ["npm", "start"]
 
