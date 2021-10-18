@@ -1,3 +1,12 @@
+# Run the app 
+`docker run -it --rm \ 
+-v ${PWD}:/app \ 
+-v /app/node_modules \ 
+-p 3001:3000 \ 
+-e CHOKIDAR_USEPOLLING=true \ 
+react-app-devops:dev`
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
